@@ -1,141 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kev | Innovation Through Pressure</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #020617, #0f172a);
-            color: white;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kev | Ingeniero en Proceso</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #f5f5f5;
+    }
 
-        header {
-            text-align: center;
-            padding: 80px 20px;
-        }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(180deg, #1a0000, #0b0b0b);
+    }
 
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-        }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #8b0000;
+    }
 
-        header p {
-            font-size: 1.3rem;
-            opacity: 0.8;
-        }
+    h2 {
+      color: #b22222;
+    }
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
+    p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
 
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-        }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #8b0000;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
 
-        h2 {
-            margin-top: 0;
-        }
+    .card {
+      background: #140000;
+      padding: 20px;
+      margin: 15px 0;
+      border-left: 4px solid #8b0000;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #22c55e;
-            color: black;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            opacity: 0.6;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a0000;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Kev</h1>
-    <p>Innovation Through Pressure</p>
+  <h1>Kev</h1>
+  <p>Ingeniero en formación | Automatización, manufactura e inteligencia artificial aplicada</p>
+  <p><strong>No uso la IA para que haga todo. Trabajo con ella.</strong></p>
+  <button class="btn" onclick="document.getElementById('proyectos').scrollIntoView()">Ver proyectos</button>
 </header>
 
-<div class="container">
+<section>
+  <h2>Sobre mí</h2>
+  <p>
+    Soy estudiante de mecatrónica enfocado en manufactura flexible. Me gusta resolver problemas reales,
+    aprender haciendo y enfrentar retos técnicos sin buscar caminos fáciles.
+  </p>
+  <p>
+    Trabajo con inteligencia artificial de forma activa: no solo pido respuestas, sino que la uso como
+    herramienta para construir, iterar y mejorar sistemas reales.
+  </p>
+</section>
 
-    <div class="card">
-        <h2>⚡ Quién soy</h2>
-        <p>
-            Estudiante de mecatrónica enfocado en manufactura flexible. Me gusta crear cosas nuevas,
-            resolver problemas complejos y llevar ideas al límite.
-        </p>
-    </div>
+<section id="proyectos">
+  <h2>Proyectos</h2>
 
-    <div class="card">
-        <h2>🧠 Mentalidad</h2>
-        <p>
-            Trabajo mejor bajo presión. No busco caminos fáciles, busco soluciones reales.
-            Aprendo rápido cuando algo me interesa y siempre estoy buscando mejorar.
-        </p>
-    </div>
+  <div class="card">
+    <h3>Brazo robótico</h3>
+    <p>Control con PCA9685 y servomotores. Desarrollo desde cero, pruebas reales y ajuste de movimiento.</p>
+  </div>
 
-    <div class="card">
-        <h2>⚙️ Habilidades</h2>
-        <p>
-            - Programación y control con Arduino / ESP32
-            <br>
-            - Automatización industrial (TIA Portal, OPC)
-            <br>
-            - Diseño y control de sistemas mecatrónicos
-            <br>
-            - Manejo avanzado de computadora
-        </p>
-    </div>
+  <div class="card">
+    <h3>Asistente IA local</h3>
+    <p>Sistema tipo asistente personal con control de archivos y automatización.</p>
+  </div>
 
-    <div class="card">
-        <h2>🚀 Proyectos</h2>
-        <p>
-            - Brazo robótico controlado
-            <br>
-            - Desarrollo de asistente con IA local (tipo OpenClaw)
-            <br>
-            - Integración de hardware + software en sistemas inteligentes
-        </p>
-    </div>
+  <div class="card">
+    <h3>Simulación industrial</h3>
+    <p>Uso de FluidSIM y lógica de automatización aplicada.</p>
+  </div>
 
-    <div class="card">
-        <h2>🤖 Visión</h2>
-        <p>
-            Crear sistemas autónomos que trabajen 24/7, integrando inteligencia artificial
-            con hardware real para resolver problemas del mundo físico.
-        </p>
-    </div>
+</section>
 
-    <div class="card">
-        <h2>📩 Contacto</h2>
-        <p>En construcción...</p>
-        <a href="#" class="btn">Próximamente</a>
-    </div>
+<section>
+  <h2>Laboratorio</h2>
+  <p>
+    Actualmente trabajando en integración de IA local, aprendizaje en CNC y desarrollo de sistemas autónomos.
+  </p>
+</section>
 
-</div>
+<section>
+  <h2>Habilidades</h2>
+  <p>CNC: 🟡🟡🟡⚪⚪</p>
+  <p>Automatización: 🟡🟡🟡🟡⚪</p>
+  <p>Programación: 🟡🟡🟡⚪⚪</p>
+</section>
 
 <footer>
-    <p>© 2026 Kev | Innovation Through Pressure</p>
+  <p>Contacto: tuemail@example.com</p>
 </footer>
 
 </body>
