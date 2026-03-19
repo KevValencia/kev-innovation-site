@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kev | Ingeniero en Proceso</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #f5f5f5;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(180deg, #1a0000, #0b0b0b);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #8b0000;
+    }
+
+    h2 {
+      color: #b22222;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #8b0000;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .card {
+      background: #140000;
+      padding: 20px;
+      margin: 15px 0;
+      border-left: 4px solid #8b0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a0000;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kev</h1>
+  <p>Ingeniero en formación | Automatización, manufactura e inteligencia artificial aplicada</p>
+  <p><strong>No uso la IA para que haga todo. Trabajo con ella.</strong></p>
+  <button class="btn" onclick="document.getElementById('proyectos').scrollIntoView()">Ver proyectos</button>
+</header>
+
+<section>
+  <h2>Sobre mí</h2>
+  <p>
+    Soy estudiante de mecatrónica enfocado en manufactura flexible. Me gusta resolver problemas reales,
+    aprender haciendo y enfrentar retos técnicos sin buscar caminos fáciles.
+  </p>
+  <p>
+    Trabajo con inteligencia artificial de forma activa: no solo pido respuestas, sino que la uso como
+    herramienta para construir, iterar y mejorar sistemas reales.
+  </p>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+
+  <div class="card">
+    <h3>Brazo robótico</h3>
+    <p>Control con PCA9685 y servomotores. Desarrollo desde cero, pruebas reales y ajuste de movimiento.</p>
+  </div>
+
+  <div class="card">
+    <h3>Asistente IA local</h3>
+    <p>Sistema tipo asistente personal con control de archivos y automatización.</p>
+  </div>
+
+  <div class="card">
+    <h3>Simulación industrial</h3>
+    <p>Uso de FluidSIM y lógica de automatización aplicada.</p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Laboratorio</h2>
+  <p>
+    Actualmente trabajando en integración de IA local, aprendizaje en CNC y desarrollo de sistemas autónomos.
+  </p>
+</section>
+
+<section>
+  <h2>Habilidades</h2>
+  <p>CNC: 🟡🟡🟡⚪⚪</p>
+  <p>Automatización: 🟡🟡🟡🟡⚪</p>
+  <p>Programación: 🟡🟡🟡⚪⚪</p>
+</section>
+
+<footer>
+  <p>Contacto: tuemail@example.com</p>
+</footer>
+
+</body>
+</html>
